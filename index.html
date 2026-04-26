@@ -3,704 +3,313 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
-    <title>Renoo AirPods | سماعة لاسلكية أنيقة</title>
-    <!-- Fonts: Arabic friendly + English fallback -->
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Renoo AirPods | سماعة أسود ذهبي</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Cairo', 'Inter', sans-serif;
-            background: radial-gradient(circle at 10% 20%, #0a0806 0%, #12100e 100%);
-            color: #f0ede8;
-            line-height: 1.5;
-            padding: 1.5rem 1rem 3rem;
-        }
-
-        /* glitter & premium accents */
-        .glow-text {
-            text-shadow: 0 0 8px rgba(255, 215, 0, 0.5);
-        }
-
-        .gold-border {
-            border-bottom: 3px solid #e6b422;
-            display: inline-block;
-            padding-bottom: 6px;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        /* header + lang button */
-        .header-flex {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 1rem;
-            margin-bottom: 1.8rem;
-            background: rgba(0,0,0,0.55);
-            backdrop-filter: blur(12px);
-            padding: 0.8rem 1.4rem;
-            border-radius: 60px;
-            border: 1px solid rgba(230, 180, 34, 0.35);
-        }
-
-        .logo h2 {
-            font-weight: 800;
-            background: linear-gradient(135deg, #F2C94C, #C79A2E);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            font-size: 1.6rem;
-            letter-spacing: -0.5px;
-        }
-
-        .lang-btn {
-            background: #1e1b18;
-            border: 1px solid #e6b422;
-            color: #f5e7c8;
-            padding: 0.5rem 1.2rem;
-            border-radius: 40px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: 0.3s;
-            font-family: inherit;
-            font-size: 0.9rem;
-        }
-
-        .lang-btn:hover {
-            background: #e6b422;
-            color: #0a0806;
-            border-color: #fff1b5;
-            box-shadow: 0 0 10px #e6b42280;
-        }
-
-        /* product card grid */
-        .product-main {
-            background: linear-gradient(145deg, #1c1a17, #11100e);
-            border-radius: 48px;
-            padding: 1.8rem;
-            box-shadow: 0 25px 40px -12px rgba(0,0,0,0.7), inset 0 1px 0 rgba(255,255,255,0.05);
-            border: 1px solid rgba(230,180,34,0.2);
-            margin-bottom: 2rem;
-        }
-
-        .image-gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            justify-content: center;
-            margin-bottom: 2rem;
-        }
-
-        .image-gallery img {
-            max-width: 150px;
-            width: 100%;
-            height: auto;
-            border-radius: 28px;
-            background: #2a251f;
-            padding: 0.4rem;
-            border: 1px solid rgba(230,180,34,0.5);
-            transition: transform 0.2s ease;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-        }
-
-        .image-gallery img:hover {
-            transform: scale(1.02);
-        }
-
-        @media (min-width: 640px) {
-            .image-gallery img {
-                max-width: 200px;
-            }
-        }
-
-        .product-title {
-            font-size: 1.9rem;
-            font-weight: 800;
-            margin: 0.5rem 0 1rem 0;
-            background: linear-gradient(to left, #FFF2D7, #e6b422);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-        }
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(240px,1fr));
-            gap: 0.8rem;
-            margin: 1.5rem 0;
-            background: rgba(0,0,0,0.3);
-            padding: 1rem;
-            border-radius: 32px;
-        }
-
-        .feature-item {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-weight: 500;
-        }
-
-        .feature-item::before {
-            content: "⚡";
-            color: #e6b422;
-            font-size: 1.2rem;
-        }
-
-        .price-block {
-            background: #00000066;
-            padding: 1rem 1.5rem;
-            border-radius: 40px;
-            margin: 1.2rem 0;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: baseline;
-            gap: 1rem;
-            justify-content: space-between;
-        }
-
-        .old-price {
-            text-decoration: line-through;
-            color: #aaa;
-            font-size: 1.2rem;
-        }
-
-        .offer-price {
-            font-size: 2rem;
-            font-weight: 800;
-            color: #FFD966;
-        }
-
-        .quantity-area {
-            margin: 1.5rem 0;
-            background: #1a1713;
-            padding: 1.2rem;
-            border-radius: 36px;
-        }
-
-        .qty-control {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            flex-wrap: wrap;
-        }
-
-        .qty-control label {
-            font-weight: 600;
-            font-size: 1.1rem;
-        }
-
-        .qty-input {
-            background: #2c2823;
-            border: 1px solid #e6b422;
-            color: #FFE8C5;
-            font-size: 1.3rem;
-            font-weight: bold;
-            width: 85px;
-            text-align: center;
-            padding: 0.6rem;
-            border-radius: 36px;
-            font-family: inherit;
-        }
-
-        .dynamic-total {
-            font-size: 1.7rem;
-            font-weight: 800;
-            color: #f3c26b;
-            margin-top: 12px;
-        }
-
-        .shipping-note {
-            font-size: 0.9rem;
-            color: #c0b7a8;
-        }
-
-        /* timer */
-        .countdown-card {
-            background: #0f0d0b;
-            border-radius: 40px;
-            padding: 1rem;
-            text-align: center;
-            margin: 1.5rem 0;
-            border: 1px solid #e6b42255;
-        }
-
-        .timer-digits {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            font-weight: 800;
-            font-size: 1.8rem;
-            margin-top: 10px;
-        }
-
-        .timer-box {
-            background: #000000aa;
-            padding: 0.4rem 0.8rem;
-            border-radius: 28px;
-            min-width: 70px;
-        }
-
-        /* reviews */
-        .reviews {
-            margin: 2rem 0;
-        }
-
-        .review-grid {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-        }
-
-        .review-card {
-            background: #1f1c18;
-            border-radius: 28px;
-            padding: 1rem 1.2rem;
-            border-right: 5px solid #e6b422;
-        }
-
-        .review-name {
-            font-weight: 700;
-            color: #FFD966;
-        }
-
-        /* form */
-        .order-form {
-            background: #15120fcc;
-            backdrop-filter: blur(8px);
-            border-radius: 48px;
-            padding: 1.8rem;
-            margin-top: 2rem;
-            border: 1px solid #e6b42233;
-        }
-
-        .form-group {
-            margin-bottom: 1.2rem;
-        }
-
-        label {
-            display: block;
-            font-weight: 600;
-            margin-bottom: 0.4rem;
-        }
-
-        input, select, textarea {
-            width: 100%;
-            padding: 0.9rem 1rem;
-            border-radius: 36px;
-            border: none;
-            background: #2c2823;
-            color: #f0ede8;
-            font-family: inherit;
-            font-size: 1rem;
-            border: 1px solid #4a443c;
-            transition: 0.2s;
-        }
-
-        input:focus, select:focus {
-            outline: none;
-            border-color: #e6b422;
-            box-shadow: 0 0 5px #e6b422;
-        }
-
-        .total-final {
-            font-size: 1.4rem;
-            background: #00000077;
-            padding: 0.8rem;
-            border-radius: 60px;
-            text-align: center;
-            margin: 1rem 0;
-        }
-
-        .submit-btn {
-            background: linear-gradient(95deg, #e6b422, #c9991a);
-            border: none;
-            width: 100%;
-            padding: 1rem;
-            font-size: 1.3rem;
-            font-weight: 800;
-            color: #0a0806;
-            border-radius: 60px;
-            cursor: pointer;
-            transition: 0.2s;
-            margin-top: 0.5rem;
-            font-family: inherit;
-        }
-
-        .submit-btn:hover {
-            transform: scale(0.98);
-            background: #ffcd4a;
-            box-shadow: 0 0 15px #ffcc66;
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 2rem;
-            font-size: 0.75rem;
-            opacity: 0.7;
-        }
-        hr {
-            border-color: #e6b42233;
-        }
-        button, .qty-input {
-            direction: ltr;
-        }
-        [dir="ltr"] .feature-item::before {
-            margin-left: 8px;
-        }
-        .product-tag {
-            font-size: 0.85rem;
-            background: #e6b42220;
-            display: inline-block;
-            padding: 0.2rem 1rem;
-            border-radius: 30px;
-        }
+        *{margin:0;padding:0;box-sizing:border-box;}
+        body{font-family:'Cairo',sans-serif;background:#f8f6f2;color:#1e1b18;line-height:1.5;}
+        .landing{max-width:700px;margin:0 auto;background:#fff;min-height:100vh;box-shadow:0 0 40px rgba(0,0,0,0.05);}
+        .inner{padding:1.5rem 1.2rem 2.5rem;}
+        .top-bar{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:0.8rem;padding-bottom:0.5rem;border-bottom:1px solid #eee6dc;margin-bottom:1.5rem;}
+        .brand{font-size:1.7rem;font-weight:800;background:linear-gradient(135deg,#b8860b,#8b6508);background-clip:text;-webkit-background-clip:text;color:transparent;}
+        .lang-btn{background:none;border:1.5px solid #d4c5b0;padding:0.4rem 1.2rem;border-radius:60px;font-weight:600;color:#926d27;cursor:pointer;transition:0.2s;}
+        .lang-btn:hover{background:#f0e7dc;border-color:#b8860b;}
+        /* Carousel جديد - يضمن ظهور جميع الصور */
+        .carousel-wrapper{position:relative;margin-bottom:1.5rem;}
+        .carousel-container{overflow-x:auto;scroll-snap-type:x mandatory;border-radius:28px;background:#fefaf5;padding:0.5rem 0;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;}
+        .carousel-track{display:flex;gap:0.8rem;padding:0 0.2rem;}
+        .carousel-slide{flex:0 0 85%;scroll-snap-align:center;display:flex;justify-content:center;align-items:center;background:#fff6ed;border-radius:28px;padding:8px;border:1px solid #ece2d6;}
+        .carousel-slide img{width:100%;height:auto;border-radius:24px;cursor:pointer;transition:0.2s;max-height:350px;object-fit:contain;}
+        .carousel-slide img:active{transform:scale(0.98);}
+        /* إخفاء شريط التمرير مع الاحتفاظ بالوظيفة */
+        .carousel-container::-webkit-scrollbar{height:4px;}
+        .carousel-container::-webkit-scrollbar-track{background:#e7dbcf;border-radius:10px;}
+        .carousel-container::-webkit-scrollbar-thumb{background:#b8860b;border-radius:10px;}
+        /* أزرار التنقل */
+        .carousel-nav{display:flex;justify-content:center;align-items:center;gap:1rem;margin-top:0.8rem;}
+        .nav-btn{background:#eee4da;border:none;width:38px;height:38px;border-radius:60px;font-size:1.3rem;cursor:pointer;color:#7a5c2c;transition:0.2s;}
+        .dots{display:flex;gap:0.5rem;}
+        .dot{width:8px;height:8px;background:#cfc2b0;border-radius:10px;cursor:pointer;transition:0.2s;}
+        .dot.active{width:22px;background:#b8860b;}
+        /* باقي التنسيقات */
+        .badge{background:#f3ede5;display:inline-block;padding:0.2rem 1rem;border-radius:40px;font-size:0.75rem;color:#a0712e;margin-bottom:1rem;}
+        .product-title{font-size:1.8rem;font-weight:800;margin:0.25rem 0 0.75rem;color:#2c241a;}
+        .features{background:#fefcf9;border-radius:32px;padding:1rem 1.2rem;margin:1.5rem 0;border:1px solid #f0e7de;}
+        .feature-item{display:flex;align-items:center;gap:12px;padding:0.5rem 0;border-bottom:1px dashed #f0e3d8;}
+        .feature-item:last-child{border:none;}
+        .price-card{background:#fef9f2;border-radius:40px;padding:1rem 1.5rem;margin:1rem 0;display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;}
+        .old-price{text-decoration:line-through;color:#aa9c8a;}
+        .current-price{font-size:2rem;font-weight:800;color:#b47c2e;}
+        .offer-tag{font-size:0.8rem;background:#e7d8c7;padding:0.2rem 0.8rem;border-radius:50px;}
+        .qty-section{background:#fff;border-radius:32px;padding:1rem 1.2rem;margin:1.2rem 0;border:1px solid #ede3d8;}
+        .qty-row{display:flex;align-items:center;flex-wrap:wrap;gap:1rem;margin-bottom:0.7rem;}
+        .qty-input{width:100px;padding:0.7rem;border-radius:48px;border:1px solid #ddd0c0;text-align:center;font-weight:600;}
+        .product-total{font-size:1.3rem;font-weight:800;color:#b47c2e;margin-top:8px;}
+        .timer-block{background:#fef7ef;border-radius:36px;padding:0.8rem;text-align:center;margin:1.2rem 0;}
+        .timer-digits{display:flex;justify-content:center;gap:1rem;margin-top:0.5rem;}
+        .timer-unit{background:#fff;padding:0.4rem 0.8rem;border-radius:28px;min-width:70px;font-weight:800;}
+        .review-card{background:#fefcf9;border-radius:28px;padding:1rem;margin-bottom:0.8rem;border-right:4px solid #e3cfb5;}
+        .review-name{font-weight:800;color:#926d27;}
+        .form-card{background:#fefaf5;border-radius:40px;padding:1.6rem;margin-top:1.8rem;border:1px solid #e7dbcf;}
+        .form-group{margin-bottom:1.2rem;}
+        label{display:block;font-weight:600;margin-bottom:0.4rem;}
+        input,select{width:100%;padding:0.8rem 1rem;border-radius:60px;border:1px solid #ddd0c0;font-family:inherit;}
+        .total-final{background:#e9dfd3;padding:0.8rem;text-align:center;border-radius:50px;font-weight:800;margin:1rem 0;}
+        .submit-btn{background:#b8860b;border:none;width:100%;padding:0.9rem;font-size:1.1rem;font-weight:800;color:#fff;border-radius:60px;cursor:pointer;}
+        footer{font-size:0.7rem;text-align:center;margin-top:2rem;color:#b5a689;}
+        /* Lightbox (تكبير الصورة) */
+        .lightbox{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.9);display:flex;justify-content:center;align-items:center;z-index:1000;cursor:pointer;opacity:0;visibility:hidden;transition:0.2s;}
+        .lightbox.active{opacity:1;visibility:visible;}
+        .lightbox img{max-width:90%;max-height:90%;border-radius:20px;box-shadow:0 0 30px rgba(0,0,0,0.5);}
+        .close-lightbox{position:absolute;top:20px;left:20px;color:#fff;font-size:2rem;font-weight:bold;background:rgba(0,0,0,0.5);width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;}
+        @media(max-width:480px){.inner{padding:1rem;}.product-title{font-size:1.5rem;}.timer-unit{min-width:55px;font-size:1rem;}}
     </style>
 </head>
 <body>
-<div class="container">
-    <div class="header-flex">
-        <div class="logo"><h2>⚡ RENOO <span style="font-weight:500">| BLACK GOLD</span></h2></div>
-        <button class="lang-btn" id="langToggleBtn">🇬🇧 English</button>
-    </div>
-
-    <div class="product-main">
-        <div class="image-gallery">
-            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGW5rJEb4R7bzyMpd7Me-urFPl8rrmNuAAcloaafNlGT_OGrYlJrCCV5OPJ4pNnl__bMBaCdUPjlLgjw7oGCwgHSRDJnceE49paKPV5P1yv3DOCwU_JvY2PVO5qCIJvh72WUga1yUhA8rrIyn2VoaJWV05XKe3mYYeq4EEz7COwkllWB53e5xPImv-TN0/s436/Screenshot_20260426-113712_Taager.jpg" alt="AirPods Renoo 1">
-            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiiKXrnrBIpvwRJ_gwahrAAWLTFsumK7kbIXYk2Pe2WkooghaJpk1dfi4ock5qPaMRgcezo0dFVMa-q8WfAdJTBdEi2r3F_E-eutoTSgd2-Xnonrcw9lCHyM-5MOrOuZlP_SRVxzzqKCbeD4n6iormHZAkUARpb-HQyLoGDar5-xdKtYgWPMWrAn_40KYs/s412/Screenshot_20260426-113658_Taager.jpg" alt="AirPods Renoo 2">
-            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibIFjLvF6wFrkOQAzRy1dr2AlI56UCZYnRREAjYPtCOVe9W1KIirpKNami4_PE7bfWyx0FWwK8icwVTif1JnJKUtc0TZHvUdAmS21-22Kgf47rx4P7WIKzIQYbzNRjNFJUF0lP4HbAmN18K4K7tGH74IxNlpwGmADCBHmsV9wjjuxMPeFJ87MczJrVBSE/s637/Screenshot_20260426-113619_Taager.jpg" alt="AirPods Renoo 3">
-        </div>
-        <div class="product-tag">✨ إصدار محدود - لون أسود ذهبي</div>
-        <h1 class="product-title" id="productName">سماعة ايربودز من رينو | أسود ذهبي</h1>
-        <div class="features-grid" id="featuresList">
-            <!-- dynamic features in arabic / filled by js later but static placeholder -->
+<div class="landing">
+    <div class="inner">
+        <div class="top-bar">
+            <div class="brand">🎧 RENOO</div>
+            <button class="lang-btn" id="langToggleBtn">English 🇬🇧</button>
         </div>
 
-        <div class="price-block">
-            <div><span class="old-price" id="oldPriceSpan">950 ج.م</span> <span id="dynamicOfferBadge"> 🔥 العرض الخاص</span></div>
-            <div class="offer-price" id="baseOfferLabel">700 ج.م للقطعة</div>
+        <!-- Carousel جديد يعرض جميع الصور جنباً إلى جنب مع تمرير أفقي -->
+        <div class="carousel-wrapper">
+            <div class="carousel-container" id="carouselContainer">
+                <div class="carousel-track" id="carouselTrack">
+                    <!-- الصور الثلاث سيتم تعبئتها بواسطة JS لضمان ظهورها جميعاً -->
+                </div>
+            </div>
+            <div class="carousel-nav">
+                <button class="nav-btn" id="prevBtn">‹</button>
+                <div class="dots" id="dotsContainer"></div>
+                <button class="nav-btn" id="nextBtn">›</button>
+            </div>
         </div>
 
-        <div class="quantity-area">
-            <div class="qty-control">
-                <label id="qtyLabel">🛒 الكمية المطلوبة :</label>
+        <div class="badge" id="extraBadge">✨ صنع في الصين • ضمان سنة • مثالية للموسيقى والمكالمات</div>
+        <h1 class="product-title" id="productTitle">سماعة ايربودز من رينو لون أسود ذهبي</h1>
+        <div class="features" id="featuresContainer"></div>
+        <div class="price-card">
+            <div><span class="old-price" id="oldPriceSpan">950 ج.م</span> <span class="offer-tag" id="offerTag">عرض خاص</span></div>
+            <div class="current-price" id="currentPriceLabel">700 ج.م</div>
+        </div>
+        <div class="qty-section">
+            <div class="qty-row">
+                <span class="qty-label" id="qtyLabelText">الكمية المطلوبة:</span>
                 <input type="number" id="quantityInput" class="qty-input" value="1" min="1" step="1">
-                <span style="font-size:0.9rem;" id="dealHint">⭐ قطعتين بسعر 1200 جنيه</span>
+                <span id="dealBadge" style="font-size:0.8rem; background:#ECE1D4; padding:0.2rem 0.8rem; border-radius:30px;">⭐ قطعتين بـ 1200 ج</span>
             </div>
-            <div class="dynamic-total" id="productTotalDisplay">إجمالي المنتج: 700 ج.م</div>
-            <div class="shipping-note" id="shippingNoteMsg">* سعر الشحن يضاف حسب المحافظة</div>
+            <div class="product-total" id="productTotalDisplay">إجمالي المنتج: 700 ج.م</div>
+            <div class="shipping-hint" id="shippingNoteText">* سعر الشحن يضاف حسب المحافظة</div>
         </div>
-
-        <div class="countdown-card">
-            <div id="timerTitle">⏳ ينتهي العرض خلال</div>
-            <div class="timer-digits" id="countdownTimer">
-                <div class="timer-box"><span id="days">00</span><br>يوم</div>
-                <div class="timer-box"><span id="hours">00</span><br>ساعة</div>
-                <div class="timer-box"><span id="minutes">00</span><br>دقيقة</div>
-                <div class="timer-box"><span id="seconds">00</span><br>ثانية</div>
+        <div class="timer-block">
+            <div id="timerTitleText">⏳ ينتهي العرض خلال</div>
+            <div class="timer-digits">
+                <div class="timer-unit"><span id="days">00</span> <span id="daysLabel">يوم</span></div>
+                <div class="timer-unit"><span id="hours">00</span> <span id="hoursLabel">ساعة</span></div>
+                <div class="timer-unit"><span id="minutes">00</span> <span id="minutesLabel">دقيقة</span></div>
+                <div class="timer-unit"><span id="seconds">00</span> <span id="secondsLabel">ثانية</span></div>
             </div>
         </div>
+        <div class="reviews-section">
+            <h3 style="font-weight:700; margin-bottom:0.8rem;" id="reviewsTitle">📣 آراء العملاء</h3>
+            <div id="reviewsList"></div>
+        </div>
+        <div class="form-card">
+            <h3 id="formHeading" style="margin-bottom:1rem;">📝 طلب الشراء</h3>
+            <form id="orderForm">
+                <div class="form-group"><label id="nameLabel">الاسم الكامل *</label><input type="text" id="fullName" required placeholder="أحمد محمد"></div>
+                <div class="form-group"><label id="govLabel">المحافظة *</label><select id="governorate" required><option value="cairo">القاهرة</option><option value="giza">الجيزة</option><option value="alex">الإسكندرية</option><option value="minya">المنيا</option><option value="asyut">أسيوط</option></select></div>
+                <div class="form-group"><label id="addressLabel">العنوان بالتفصيل *</label><input type="text" id="address" required placeholder="الشارع، المنطقة، رقم العمارة"></div>
+                <div class="form-group"><label id="mobileLabel">رقم الموبايل *</label><input type="tel" id="mobile" required placeholder="01xxxxxxxxx"></div>
+                <div class="form-group"><label id="altMobileLabel">رقم موبايل آخر (اختياري)</label><input type="tel" id="altMobile" placeholder="رقم إضافي"></div>
+                <div class="total-final" id="finalTotalSpan">المبلغ الإجمالي (شامل الشحن): 0 ج.م</div>
+                <button type="submit" class="submit-btn" id="submitBtn">✅ تأكيد الطلب</button>
+            </form>
+        </div>
+        <footer>© Renoo Audio — شحن سريع • ضمان سنة</footer>
     </div>
+</div>
 
-    <!-- 5 تقييمات ممتازة -->
-    <div class="reviews" id="reviewsSection">
-        <h3 class="gold-border" id="reviewsTitle">📣 آراء العملاء</h3>
-        <div class="review-grid" id="reviewsContainer"></div>
-    </div>
-
-    <!-- form الطلب -->
-    <div class="order-form" id="orderFormSection">
-        <h3 id="formTitle">📝 طلب الشراء</h3>
-        <form id="orderForm">
-            <div class="form-group">
-                <label id="nameLabel">الاسم الكامل *</label>
-                <input type="text" id="fullName" required placeholder="مثال: أحمد محمود">
-            </div>
-            <div class="form-group">
-                <label id="govLabel">المحافظة *</label>
-                <select id="governorate" required>
-                    <option value="cairo">القاهرة</option>
-                    <option value="giza">الجيزة</option>
-                    <option value="alex">الإسكندرية</option>
-                    <option value="minya">المنيا</option>
-                    <option value="asyut">أسيوط</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label id="addressLabel">العنوان بالتفصيل *</label>
-                <input type="text" id="address" required placeholder="الشارع، المنطقة، رقم العمارة">
-            </div>
-            <div class="form-group">
-                <label id="mobileLabel">رقم الموبايل *</label>
-                <input type="tel" id="mobile" required placeholder="01xxxxxxxxx">
-            </div>
-            <div class="form-group">
-                <label id="altMobileLabel">رقم موبايل آخر (اختياري)</label>
-                <input type="tel" id="altMobile" placeholder="رقم إضافي">
-            </div>
-            <div class="total-final" id="finalTotalSpan">المبلغ الإجمالي (شامل الشحن): 0 ج.م</div>
-            <button type="submit" class="submit-btn" id="submitBtnText">✅ تأكيد الطلب</button>
-        </form>
-    </div>
-    <footer>© Renoo Audio - ضمان سنة | صنع في الصين</footer>
+<!-- Lightbox لتكبير الصورة -->
+<div id="lightbox" class="lightbox">
+    <div class="close-lightbox">✕</div>
+    <img id="lightboxImg" src="" alt="مكبرة">
 </div>
 
 <script>
-    // ------------------- DATA --------------------
-    // المنتج الأسعار: حسب الكمية = 1 => 700، 2 => 1200، 3+ => 1200 + (qty-2)*600
-    function getProductTotal(qty) {
-        if (qty === 1) return 700;
-        if (qty === 2) return 1200;
-        if (qty >= 3) return 1200 + (qty - 2) * 600;
-        return 700;
+(function() {
+    // روابط الصور الأصلية (باستخدام الحجم المناسب)
+    const imageUrls = [
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGW5rJEb4R7bzyMpd7Me-urFPl8rrmNuAAcloaafNlGT_OGrYlJrCCV5OPJ4pNnl__bMBaCdUPjlLgjw7oGCwgHSRDJnceE49paKPV5P1yv3DOCwU_JvY2PVO5qCIJvh72WUga1yUhA8rrIyn2VoaJWV05XKe3mYYeq4EEz7COwkllWB53e5xPImv-TN0/s320/Screenshot_20260426-113712_Taager.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiiKXrnrBIpvwRJ_gwahrAAWLTFsumK7kbIXYk2Pe2WkooghaJpk1dfi4ock5qPaMRgcezo0dFVMa-q8WfAdJTBdEi2r3F_E-eutoTSgd2-Xnonrcw9lCHyM-5MOrOuZlP_SRVxzzqKCbeD4n6iormHZAkUARpb-HQyLoGDar5-xdKtYgWPMWrAn_40KYs/s320/Screenshot_20260426-113658_Taager.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibIFjLvF6wFrkOQAzRy1dr2AlI56UCZYnRREAjYPtCOVe9W1KIirpKNami4_PE7bfWyx0FWwK8icwVTif1JnJKUtc0TZHvUdAmS21-22Kgf47rx4P7WIKzIQYbzNRjNFJUF0lP4HbAmN18K4K7tGH74IxNlpwGmADCBHmsV9wjjuxMPeFJ87MczJrVBSE/s320/Screenshot_20260426-113619_Taager.jpg"
+    ];
+
+    // قائمة بخدمات الوكيل المتعددة
+    const proxyServices = [
+        (url) => `https://images.weserv.nl/?url=${encodeURIComponent(url)}&w=500&h=500&fit=contain`,
+        (url) => `https://wsrv.nl/?url=${encodeURIComponent(url)}&w=500&h=500`,
+        (url) => `https://img.tgcnt.com/proxy?url=${encodeURIComponent(url)}`,
+        (url) => url
+    ];
+
+    // دالة لتحميل الصورة باستخدام الوكيل مع محاولات
+    function loadImageWithProxy(imgElement, originalUrl, attempt = 0) {
+        if (attempt >= proxyServices.length) {
+            imgElement.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"%3E%3Crect width="400" height="400" fill="%23f3ede5"/%3E%3Ctext x="50%25" y="45%25" font-size="22" fill="%23b8860b" text-anchor="middle" font-family="Cairo"%3ERenoo%3C/text%3E%3Ctext x="50%25" y="60%25" font-size="16" fill="%23926d27" text-anchor="middle"%3EAirPods%3C/text%3E%3C/svg%3E';
+            return;
+        }
+        const proxyUrl = proxyServices[attempt](originalUrl);
+        imgElement.src = proxyUrl;
+        imgElement.onerror = () => loadImageWithProxy(imgElement, originalUrl, attempt + 1);
     }
 
-    // الشحن حسب المحافظة
-    function getShippingCost(govValue) {
-        if (govValue === 'cairo' || govValue === 'giza' || govValue === 'alex') return 50;
-        if (govValue === 'minya' || govValue === 'asyut') return 80;
-        return 50; // default
-    }
+    // بناء الكاروسيل وإضافة الصور
+    const track = document.getElementById('carouselTrack');
+    const dotsContainer = document.getElementById('dotsContainer');
+    let currentIndex = 0;
+    let slides = [];
 
-    // -------- عناصر DOM -------------
+    // إنشاء عناصر الصور والنقاط
+    imageUrls.forEach((url, idx) => {
+        const slideDiv = document.createElement('div');
+        slideDiv.className = 'carousel-slide';
+        const img = document.createElement('img');
+        img.alt = `Renoo AirPods ${idx+1}`;
+        img.style.cursor = 'pointer';
+        // حدث النقر لتكبير الصورة
+        img.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightboxImg');
+            lightboxImg.src = img.src;
+            lightbox.classList.add('active');
+        });
+        loadImageWithProxy(img, url, 0);
+        slideDiv.appendChild(img);
+        track.appendChild(slideDiv);
+        slides.push(slideDiv);
+        
+        // النقاط
+        const dot = document.createElement('span');
+        dot.classList.add('dot');
+        if (idx === 0) dot.classList.add('active');
+        dot.addEventListener('click', () => {
+            scrollToSlide(idx);
+        });
+        dotsContainer.appendChild(dot);
+    });
+
+    // تحديث النقاط بناءً على التمرير
+    const container = document.getElementById('carouselContainer');
+    function updateActiveDot() {
+        const scrollLeft = container.scrollLeft;
+        const slideWidth = slides[0]?.offsetWidth || 0;
+        const newIndex = Math.round(scrollLeft / (slideWidth + 16)); // 16 هي gap
+        if (newIndex !== currentIndex && newIndex >=0 && newIndex < slides.length) {
+            currentIndex = newIndex;
+            document.querySelectorAll('.dot').forEach((dot, i) => {
+                dot.classList.toggle('active', i === currentIndex);
+            });
+        }
+    }
+    container.addEventListener('scroll', updateActiveDot);
+    
+    function scrollToSlide(index) {
+        if (index < 0) index = 0;
+        if (index >= slides.length) index = slides.length-1;
+        const slideWidth = slides[0]?.offsetWidth || 0;
+        const gap = 16;
+        container.scrollTo({ left: index * (slideWidth + gap), behavior: 'smooth' });
+        currentIndex = index;
+        updateActiveDot();
+    }
+    
+    // أزرار التنقل
+    document.getElementById('prevBtn').addEventListener('click', () => scrollToSlide(currentIndex - 1));
+    document.getElementById('nextBtn').addEventListener('click', () => scrollToSlide(currentIndex + 1));
+    
+    // معاينة ضبط العرض عند تحميل الصور
+    window.addEventListener('resize', () => scrollToSlide(currentIndex));
+    setTimeout(() => scrollToSlide(0), 200);
+
+    // Lightbox الإغلاق
+    const lightbox = document.getElementById('lightbox');
+    const closeLightbox = document.querySelector('.close-lightbox');
+    function closeLightboxFn() { lightbox.classList.remove('active'); }
+    closeLightbox.addEventListener('click', closeLightboxFn);
+    lightbox.addEventListener('click', (e) => { if(e.target === lightbox) closeLightboxFn(); });
+    
+    // --- باقي وظائف المنتج (الأسعار، الشحن، اللغة، التقييمات، العداد) ---
+    function getProductTotal(qty) { if(qty===1) return 700; if(qty===2) return 1200; return 1200 + (qty-2)*600; }
+    function getShippingCost(gov) { return (['cairo','giza','alex'].includes(gov)) ? 50 : 80; }
+
     const quantityInput = document.getElementById('quantityInput');
     const productTotalDisplay = document.getElementById('productTotalDisplay');
     const governorateSelect = document.getElementById('governorate');
     const finalTotalSpan = document.getElementById('finalTotalSpan');
     const langToggle = document.getElementById('langToggleBtn');
-
-    // helpers متغير الترجمة
-    let currentLang = 'ar'; // ar or en
-
-    // نصوص ثنائية اللغة
-    const translations = {
-        ar: {
-            productName: "سماعة ايربودز من رينو | أسود ذهبي",
-            features: [
-                "⚡ تصميم بيضاوي أنيق — بحجم الجيب، لمسة فاخرة",
-                "🔌 شحن USB-C متوافق مع جميع الأجهزة الحديثة",
-                "🎧 علبة شحن 300mAh + سماعة 30mAh لكل واحدة",
-                "📡 اتصال True Wireless بدون أسلاك، مدى >10 متر",
-                "🎶 صوت استريو عالي النقاء 20Hz-20kHz + Driver 10mm",
-                "✨ نصف علوي لامع كروم ونصف سفلي مطفي ذهبي",
-                "📱 متوافق مع iOS, Android, لابتوب (Bluetooth)",
-                "💎 قيمة ممتازة مقابل السعر - بديل ذكي للماركات الغالية"
-            ],
-            extraInfo: "💡 صنع في الصين • ضمان سنة • مثالية للموسيقى والمكالمات والرياضة",
-            reviews: [
-                {name: "محمد عبدالله", text: "سماعة رائعة جدًا! الصوت نقي والعزل ممتاز. الشحن يدوم طويلاً. أنصح بها بشدة 🔥", rating: "⭐⭐⭐⭐⭐"},
-                {name: "سارة احمد", text: "التصميم فخم واللون الأسود الذهبي جذاب. مريحة في الأذن وجودة الصوت خرافية 👌🏻", rating: "⭐⭐⭐⭐⭐"},
-                {name: "يوسف علاء", text: "نفس جودة الماركات الكبرى بسعر معقول. تجربة استخدام سلسة وتتصل بسرعة. رائعة!", rating: "⭐⭐⭐⭐⭐"},
-                {name: "ليلى هاني", text: "القطعتين ب 1200 جنيه صفقة لا تعوض. السماعة تحفة، الشحن سريع USB-C. خمس نجوم 💎", rating: "⭐⭐⭐⭐⭐"},
-                {name: "كريم مصطفى", text: "أفضل سماعة في فئتها. عزل الصوت ممتاز. استخدام يومي للتمرين والمكالمات ممتاز 👏", rating: "⭐⭐⭐⭐⭐"}
-            ],
-            formLabels: {
-                name: "الاسم الكامل *",
-                gov: "المحافظة *",
-                address: "العنوان بالتفصيل *",
-                mobile: "رقم الموبايل *",
-                altMobile: "رقم موبايل آخر (اختياري)",
-                submit: "✅ تأكيد الطلب",
-                totalMsg: "المبلغ الإجمالي (شامل الشحن):"
-            },
-            qtyLabel: "🛒 الكمية المطلوبة :",
-            dealHint: "⭐ قطعتين بسعر 1200 جنيه",
-            timerTitle: "⏳ ينتهي العرض خلال",
-            reviewsTitle: "📣 آراء العملاء",
-            formTitle: "📝 طلب الشراء",
-            shippingNote: "* سعر الشحن يضاف حسب المحافظة",
-            productTotalPrefix: "إجمالي المنتج:"
-        },
-        en: {
-            productName: "Renoo AirPods | Black Gold Edition",
-            features: [
-                "⚡ Elegant egg-shaped design — pocket-friendly & premium",
-                "🔌 USB-C charging — compatible with modern devices",
-                "🎧 Charging case 300mAh + earbuds 30mAh each",
-                "📡 True Wireless connection, range >10 meters",
-                "🎶 High-fidelity sound 20Hz-20kHz + 10mm drivers",
-                "✨ Glossy chrome top + matte gold bottom",
-                "📱 Works with iOS, Android, laptops (Bluetooth)",
-                "💎 Great value — premium alternative without the high price"
-            ],
-            extraInfo: "💡 Made in China • 1-year warranty • perfect for music, calls, sports",
-            reviews: [
-                {name: "Mohamed Abdallah", text: "Amazing sound quality! Noise isolation is great. Battery lasts long. Highly recommend 🔥", rating: "⭐⭐⭐⭐⭐"},
-                {name: "Sara Ahmed", text: "Elegant black-gold design, very comfortable and sound is crystal clear 👌🏻", rating: "⭐⭐⭐⭐⭐"},
-                {name: "Youssef Alaa", text: "Same quality as big brands but affordable. Seamless connection, excellent!", rating: "⭐⭐⭐⭐⭐"},
-                {name: "Laila Hany", text: "Two pieces for 1200 EGP is a steal! Charging via USB-C, premium build 💎", rating: "⭐⭐⭐⭐⭐"},
-                {name: "Kareem Mostafa", text: "Best budget earbuds. Great for daily use, workouts & calls 👏", rating: "⭐⭐⭐⭐⭐"}
-            ],
-            formLabels: {
-                name: "Full Name *",
-                gov: "Governorate *",
-                address: "Detailed Address *",
-                mobile: "Mobile Number *",
-                altMobile: "Alternate Mobile (Optional)",
-                submit: "✅ Confirm Order",
-                totalMsg: "Total Amount (including shipping):"
-            },
-            qtyLabel: "🛒 Quantity:",
-            dealHint: "⭐ Two units for 1200 EGP",
-            timerTitle: "⏳ Offer ends in",
-            reviewsTitle: "📣 Customer Reviews",
-            formTitle: "📝 Order Form",
-            shippingNote: "* Shipping fee depends on governorate",
-            productTotalPrefix: "Product total:"
-        }
-    };
-
-    function applyLanguage(lang) {
-        currentLang = lang;
-        const t = translations[lang];
-        document.getElementById('productName').innerText = t.productName;
-        const featuresContainer = document.getElementById('featuresList');
-        featuresContainer.innerHTML = t.features.map(f => `<div class="feature-item">${f}</div>`).join('');
-        // extra info inline
-        const extraDiv = document.querySelector('.product-tag');
-        if(extraDiv) extraDiv.innerText = t.extraInfo;
-        // reviews rebuild
-        const reviewsContainer = document.getElementById('reviewsContainer');
-        reviewsContainer.innerHTML = t.reviews.map(rev => `
-            <div class="review-card">
-                <div class="review-name">${rev.name}</div>
-                <div>${rev.rating} ${rev.text}</div>
-            </div>
-        `).join('');
-        document.getElementById('reviewsTitle').innerText = t.reviewsTitle;
-        document.getElementById('formTitle').innerText = t.formTitle;
-        document.getElementById('nameLabel').innerText = t.formLabels.name;
-        document.getElementById('govLabel').innerText = t.formLabels.gov;
-        document.getElementById('addressLabel').innerText = t.formLabels.address;
-        document.getElementById('mobileLabel').innerText = t.formLabels.mobile;
-        document.getElementById('altMobileLabel').innerText = t.formLabels.altMobile;
-        document.getElementById('submitBtnText').innerText = t.formLabels.submit;
-        document.getElementById('qtyLabel').innerText = t.qtyLabel;
-        document.getElementById('dealHint').innerText = t.dealHint;
-        document.getElementById('timerTitle').innerHTML = t.timerTitle;
-        document.getElementById('shippingNoteMsg').innerText = t.shippingNote;
-        // update dynamic labels that show total prefix
-        updatePriceAndTotalUI();
-        // change direction
-        if(lang === 'ar'){
-            document.body.setAttribute('dir', 'rtl');
-        } else {
-            document.body.setAttribute('dir', 'ltr');
-        }
-    }
-
-    function updateProductTotalDisplay() {
-        let qty = parseInt(quantityInput.value);
-        if(isNaN(qty) || qty < 1) qty = 1;
-        const totalProduct = getProductTotal(qty);
-        const prefix = currentLang === 'ar' ? "إجمالي المنتج:" : "Product total:";
-        productTotalDisplay.innerHTML = `${prefix} ${totalProduct} ج.م`;
-        return totalProduct;
-    }
-
-    function updateFinalTotal() {
-        const qty = parseInt(quantityInput.value) || 1;
-        const productTotalVal = getProductTotal(qty);
-        const gov = governorateSelect.value;
-        const shipping = getShippingCost(gov);
-        const finalTotal = productTotalVal + shipping;
-        const totalMsg = currentLang === 'ar' ? "المبلغ الإجمالي (شامل الشحن):" : "Total Amount (including shipping):";
-        finalTotalSpan.innerHTML = `${totalMsg} ${finalTotal} ج.م`;
-    }
+    let currentLang = 'ar';
 
     function updatePriceAndTotalUI() {
-        updateProductTotalDisplay();
-        updateFinalTotal();
+        let qty = parseInt(quantityInput.value);
+        if (isNaN(qty) || qty < 1) qty = 1;
+        const prodTotal = getProductTotal(qty);
+        const shipping = getShippingCost(governorateSelect.value);
+        const total = prodTotal + shipping;
+        productTotalDisplay.innerText = (currentLang === 'ar' ? 'إجمالي المنتج: ' : 'Product total: ') + prodTotal + ' ج.م';
+        finalTotalSpan.innerText = (currentLang === 'ar' ? 'المبلغ الإجمالي (شامل الشحن): ' : 'Total Amount (shipping included): ') + total + ' ج.م';
     }
 
-    // الأحداث
-    quantityInput.addEventListener('input', function() {
-        let val = parseInt(this.value);
-        if(isNaN(val) || val < 1) this.value = 1;
-        updatePriceAndTotalUI();
-    });
-    governorateSelect.addEventListener('change', updateFinalTotal);
+    quantityInput.addEventListener('input', function() { let v=this.value.trim(); if(v==='') return; let n=parseInt(v); if(!isNaN(n) && n>=1) updatePriceAndTotalUI(); });
+    quantityInput.addEventListener('blur', function() { let v=parseInt(this.value); if(isNaN(v)||v<1) this.value=1; updatePriceAndTotalUI(); });
+    governorateSelect.addEventListener('change', updatePriceAndTotalUI);
 
-    // countdown 5 أيام من الآن
-    let deadline = new Date();
-    deadline.setDate(deadline.getDate() + 5);
-    deadline.setHours(23, 59, 59, 999);
-    function updateCountdown() {
-        const now = new Date().getTime();
-        const distance = deadline.getTime() - now;
-        if(distance < 0) {
-            document.getElementById('days').innerText = "00";
-            document.getElementById('hours').innerText = "00";
-            document.getElementById('minutes').innerText = "00";
-            document.getElementById('seconds').innerText = "00";
-            return;
-        }
-        const days = Math.floor(distance / (1000*60*60*24));
-        const hours = Math.floor((distance % (86400000)) / (3600000));
-        const minutes = Math.floor((distance % 3600000) / 60000);
-        const seconds = Math.floor((distance % 60000) / 1000);
-        document.getElementById('days').innerText = days < 10 ? '0'+days : days;
-        document.getElementById('hours').innerText = hours < 10 ? '0'+hours : hours;
-        document.getElementById('minutes').innerText = minutes < 10 ? '0'+minutes : minutes;
-        document.getElementById('seconds').innerText = seconds < 10 ? '0'+seconds : seconds;
+    const translations = {
+        ar: { productTitle:"سماعة ايربودز من رينو لون أسود ذهبي", extraBadge:"✨ صنع في الصين • ضمان سنة • مثالية للموسيقى والمكالمات",
+            features:["🎯 تصميم بيضاوي أنيق — يناسب الجيب والشنطة","🔌 شحن USB-C متوافق مع جميع الأجهزة","🔋 علبة شحن 300mAh وسماعة 30mAh لكل واحدة","📡 True Wireless لاسلكي بالكامل، مدى >10 متر","🎵 صوت نقي (20Hz-20kHz) + Driver 10mm","✨ نصف علوي لامع كروم / نصف سفلي مطفي ذهبي","📱 متوافق مع أجهزة الموبايل والتابلت واللابتوب","💰 قيمة ممتازة مقابل السعر - بديل ذكي للماركات الغالية"],
+            offerTag:"عرض خاص", oldPrice:"950 ج.م", currentPricePrefix:"700 ج.م للقطعة", qtyLabel:"الكمية المطلوبة:", dealHint:"⭐ قطعتين بـ 1200 ج", productTotalPrefix:"إجمالي المنتج:", shippingNote:"* سعر الشحن يضاف حسب المحافظة", timerTitle:"⏳ ينتهي العرض خلال", days:"يوم", hours:"ساعة", minutes:"دقيقة", seconds:"ثانية",
+            reviewsTitle:"📣 آراء العملاء", reviews:[{name:"محمد عبدالله",text:"سماعة رائعة! الصوت نقي والشحن يدوم طويلاً. أنصح بها 🔥",rating:"⭐⭐⭐⭐⭐"},{name:"سارة احمد",text:"التصميم فخم واللون الأسود الذهبي جذاب. مريحة وجودة خرافية 👌🏻",rating:"⭐⭐⭐⭐⭐"},{name:"يوسف علاء",text:"نفس جودة الماركات الكبرى بسعر معقول. تجربة سلسة جداً!",rating:"⭐⭐⭐⭐⭐"},{name:"ليلى هاني",text:"القطعتين ب 1200 جنيه صفقة لا تعوض. السماعة تحفة 🎶",rating:"⭐⭐⭐⭐⭐"},{name:"كريم مصطفى",text:"أفضل سماعة في فئتها. عزل صوت ممتاز للرياضة والمكالمات",rating:"⭐⭐⭐⭐⭐"}],
+            formHeading:"📝 طلب الشراء", nameLabel:"الاسم الكامل *", govLabel:"المحافظة *", addressLabel:"العنوان بالتفصيل *", mobileLabel:"رقم الموبايل *", altMobileLabel:"رقم موبايل آخر (اختياري)", submitBtn:"✅ تأكيد الطلب", totalMsg:"المبلغ الإجمالي (شامل الشحن):" },
+        en: { productTitle:"Renoo AirPods | Black Gold Edition", extraBadge:"✨ Made in China • 1 Year Warranty • Music & Calls",
+            features:["🎯 Elegant egg-shaped design — pocket friendly","🔌 USB-C charging — compatible","🔋 Case 300mAh + buds 30mAh each","📡 True Wireless, range >10m","🎵 High-fidelity 20Hz-20kHz + 10mm drivers","✨ Glossy chrome top + matte gold bottom","📱 Works with iOS, Android, laptops","💰 Great value - premium alternative"],
+            offerTag:"Special Offer", oldPrice:"950 EGP", currentPricePrefix:"700 EGP per piece", qtyLabel:"Quantity:", dealHint:"⭐ Two pieces for 1200 EGP", productTotalPrefix:"Product total:", shippingNote:"* Shipping fee depends on governorate", timerTitle:"⏳ Offer ends in", days:"Days", hours:"Hrs", minutes:"Min", seconds:"Sec",
+            reviewsTitle:"📣 Customer Reviews", reviews:[{name:"Mohamed Abdallah",text:"Amazing sound! Clear and deep bass. Highly recommend 🔥",rating:"⭐⭐⭐⭐⭐"},{name:"Sara Ahmed",text:"Elegant black-gold design, very comfortable and crystal clear 👌🏻",rating:"⭐⭐⭐⭐⭐"},{name:"Youssef Alaa",text:"Same quality as big brands but affordable. Flawless connection!",rating:"⭐⭐⭐⭐⭐"},{name:"Laila Hany",text:"Two for 1200 EGP is a steal! Fast charging, premium build 💎",rating:"⭐⭐⭐⭐⭐"},{name:"Kareem Mostafa",text:"Best budget earbuds. Great for workouts and calls",rating:"⭐⭐⭐⭐⭐"}],
+            formHeading:"📝 Order Form", nameLabel:"Full Name *", govLabel:"Governorate *", addressLabel:"Detailed Address *", mobileLabel:"Mobile Number *", altMobileLabel:"Alternate Mobile (Optional)", submitBtn:"✅ Confirm Order", totalMsg:"Total Amount (shipping included):" }
+    };
+    
+    function applyLanguage(lang) {
+        currentLang = lang; const t = translations[lang];
+        document.getElementById('productTitle').innerText = t.productTitle;
+        document.getElementById('extraBadge').innerText = t.extraBadge;
+        document.getElementById('featuresContainer').innerHTML = t.features.map(f => `<div class="feature-item"><span class="feature-icon">✦</span> ${f}</div>`).join('');
+        document.getElementById('offerTag').innerText = t.offerTag;
+        document.getElementById('oldPriceSpan').innerText = t.oldPrice;
+        document.getElementById('currentPriceLabel').innerText = t.currentPricePrefix;
+        document.getElementById('qtyLabelText').innerText = t.qtyLabel;
+        document.getElementById('dealBadge').innerText = t.dealHint;
+        document.getElementById('shippingNoteText').innerText = t.shippingNote;
+        document.getElementById('timerTitleText').innerText = t.timerTitle;
+        document.getElementById('daysLabel').innerText = t.days; document.getElementById('hoursLabel').innerText = t.hours; document.getElementById('minutesLabel').innerText = t.minutes; document.getElementById('secondsLabel').innerText = t.seconds;
+        document.getElementById('reviewsTitle').innerText = t.reviewsTitle;
+        document.getElementById('reviewsList').innerHTML = t.reviews.map(r => `<div class="review-card"><div class="review-name">${r.name}</div><div>${r.rating} ${r.text}</div></div>`).join('');
+        document.getElementById('formHeading').innerText = t.formHeading;
+        document.getElementById('nameLabel').innerText = t.nameLabel; document.getElementById('govLabel').innerText = t.govLabel; document.getElementById('addressLabel').innerText = t.addressLabel; document.getElementById('mobileLabel').innerText = t.mobileLabel; document.getElementById('altMobileLabel').innerText = t.altMobileLabel; document.getElementById('submitBtn').innerText = t.submitBtn;
+        updatePriceAndTotalUI();
+        document.body.style.direction = lang === 'ar' ? 'rtl' : 'ltr';
+        document.querySelector('.landing').style.direction = lang === 'ar' ? 'rtl' : 'ltr';
     }
-    updateCountdown();
-    setInterval(updateCountdown, 1000);
-
-    // form submission (demo)
-    const orderForm = document.getElementById('orderForm');
-    orderForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        const name = document.getElementById('fullName').value.trim();
-        const govSelect = document.getElementById('governorate');
-        const govText = govSelect.options[govSelect.selectedIndex]?.text;
-        const address = document.getElementById('address').value.trim();
-        const mobile = document.getElementById('mobile').value.trim();
-        if(!name || !address || !mobile) {
-            alert(currentLang === 'ar' ? 'الرجاء ملء جميع الحقول الأساسية' : 'Please fill all required fields');
-            return;
-        }
-        const qty = parseInt(quantityInput.value);
-        const productPrice = getProductTotal(qty);
-        const shippingCost = getShippingCost(governorateSelect.value);
-        const total = productPrice + shippingCost;
-        const msg = currentLang === 'ar' ?
-            `✅ تم استلام طلبك!\nالاسم: ${name}\nالمحافظة: ${govText}\nالعنوان: ${address}\nالكمية: ${qty}\nإجمالي المنتج: ${productPrice} ج.م\nالشحن: ${shippingCost} ج.م\nالإجمالي: ${total} ج.م\nسيتم التواصل معك خلال 24 ساعة.` :
-            `✅ Order received!\nName: ${name}\nGovernorate: ${govText}\nAddress: ${address}\nQuantity: ${qty}\nProduct total: ${productPrice} EGP\nShipping: ${shippingCost} EGP\nTotal: ${total} EGP\nWe will contact you within 24h.`;
-        alert(msg);
-        // optional reset or not
-    });
-
-    // تبديل اللغة
-    langToggle.addEventListener('click', () => {
-        if(currentLang === 'ar') {
-            applyLanguage('en');
-            langToggle.innerHTML = "🇸🇦 العربية";
-            currentLang = 'en';
-        } else {
-            applyLanguage('ar');
-            langToggle.innerHTML = "🇬🇧 English";
-            currentLang = 'ar';
-        }
-        updatePriceAndTotalUI();
-    });
-
-    // initial setup (arabic)
-    applyLanguage('ar');
-    // set default product price display + shipping
-    updatePriceAndTotalUI();
-    // handle double update after load
-    window.addEventListener('load', () => {
-        updatePriceAndTotalUI();
-    });
+    langToggle.addEventListener('click', () => { if(currentLang === 'ar') { applyLanguage('en'); langToggle.innerHTML = "🇸🇦 العربية"; } else { applyLanguage('ar'); langToggle.innerHTML = "English 🇬🇧"; } });
+    applyLanguage('ar'); updatePriceAndTotalUI();
+    
+    let deadline = new Date(); deadline.setDate(deadline.getDate()+5); deadline.setHours(23,59,59,999);
+    function updateCountdown() { let now = new Date().getTime(), dist = deadline.getTime() - now; if(dist<0) dist=0; document.getElementById('days').innerText = Math.floor(dist/(1000*60*60*24)).toString().padStart(2,'0'); document.getElementById('hours').innerText = Math.floor((dist%86400000)/3600000).toString().padStart(2,'0'); document.getElementById('minutes').innerText = Math.floor((dist%3600000)/60000).toString().padStart(2,'0'); document.getElementById('seconds').innerText = Math.floor((dist%60000)/1000).toString().padStart(2,'0'); }
+    setInterval(updateCountdown,1000); updateCountdown();
+    
+    document.getElementById('orderForm').addEventListener('submit', function(e) { e.preventDefault(); let name = document.getElementById('fullName').value.trim(), govSelect = document.getElementById('governorate'), govText = govSelect.options[govSelect.selectedIndex]?.text, address = document.getElementById('address').value.trim(), mobile = document.getElementById('mobile').value.trim(); if(!name||!address||!mobile) { alert(currentLang === 'ar' ? 'الرجاء ملء جميع الحقول الأساسية' : 'Please fill all required fields'); return; } let qty = parseInt(quantityInput.value); if(isNaN(qty)||qty<1) qty=1; let prod = getProductTotal(qty), ship = getShippingCost(governorateSelect.value), total = prod+ship; alert(currentLang==='ar'? `✅ تم استلام طلبك!\nالاسم: ${name}\nالمحافظة: ${govText}\nالعنوان: ${address}\nالكمية: ${qty}\nإجمالي المنتج: ${prod} ج.م\nالشحن: ${ship} ج.م\nالإجمالي: ${total} ج.م\nسيتم التواصل معك خلال 24 ساعة.` : `✅ Order received!\nName: ${name}\nGovernorate: ${govText}\nAddress: ${address}\nQuantity: ${qty}\nProduct total: ${prod} EGP\nShipping: ${ship} EGP\nTotal: ${total} EGP\nWe will contact you within 24h.`); });
+})();
 </script>
 </body>
-  </html>
+</html>
